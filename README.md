@@ -17,8 +17,10 @@ Master Thesis of Yuching Li, 2023
 ---
 
 ## Thesis <a name="thesis"></a>
+Directory: UUThesis2023
 
 ## Supervised Model (Faster RCNN) <a name="fasterrcnn"></a>
+Directory: 
 
 ## Self-Supervised Model (GroundingDINO) <a name="groundingdino"></a>
 
