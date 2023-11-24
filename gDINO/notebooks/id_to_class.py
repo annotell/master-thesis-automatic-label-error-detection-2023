@@ -1,0 +1,318 @@
+bdd100k_det = {
+    0: "pedestrian",
+    1: "rider",
+    2: "car",
+    3: "truck",
+    4: "bus",
+    5: "train",
+    6: "motorcycle",
+    7: "bicycle",
+    8: "traffic light",
+    9: "traffic sign",
+    10: "bg",
+}
+
+
+shift_det = {
+    0: "pedestrian",
+    1: "car",
+    2: "truck",
+    3: "bus",
+    4: "motorcycle",
+    5: "bicycle",
+    6: "bg"
+}
+
+
+shift_det_name2RGB = {
+    "pedestrian": (245, 245, 245),
+    "car": (197, 202, 233),
+    "truck": (155, 249, 196),
+    "bus": (178, 235, 242),
+    "motorcycle": (255, 205, 210),
+    "bicycle": (255, 224, 178),
+    "bg": (244, 67, 54)
+}
+
+shift_det_name2red = {
+    "pedestrian": (255, 0, 0),
+    "car": (255, 0, 0),
+    "truck": (255, 0, 0),
+    "bus": (255, 0, 0),
+    "motorcycle": (255, 0, 0),
+    "bicycle": (255, 0, 0),
+    "bg": (255, 0, 0)
+}
+
+shift_det_name2white = {
+    "pedestrian": (255, 255, 255),
+    "car": (255, 255, 255),
+    "truck": (255, 255, 255),
+    "bus": (255, 255, 255),
+    "motorcycle": (255, 255, 255),
+    "bicycle": (255, 255, 255),
+    "motorcycle": (255, 255, 255),
+    "bicycle": (255, 255, 255),
+    "bg": (255, 255, 255)
+}
+
+# https://materialui.co/colors/
+# https://www.rapidtables.com/convert/color/hex-to-rF44336gb.html
+bdd100k_det_name2RGB = {
+    "pedestrian": (245, 245, 245),
+    "rider": (197, 202, 233),
+    "car": (155, 249, 196),
+    "truck": (178, 235, 242),
+    "bus": (255, 205, 210),
+    "train": (255, 224, 178),
+    "motorcycle": (215, 204, 200),
+    "bicycle": (225, 190, 231),
+    "traffic light": (200, 230, 201),
+    "traffic sign": (248, 187, 208),
+    "bg": (244, 67, 54)
+}
+bdd100k_det_name2red = {
+    "pedestrian": (255, 0, 0),
+    "rider": (255, 0, 0),
+    "car": (255, 0, 0),
+    "truck": (255, 0, 0),
+    "bus": (255, 0, 0),
+    "train": (255, 0, 0),
+    "motorcycle": (255, 0, 0),
+    "bicycle": (255, 0, 0),
+    "traffic light": (255, 0, 0),
+    "traffic sign": (255, 0, 0),
+    "bg": (255, 0, 0)
+}
+
+bdd100k_det_name2white = {
+    "pedestrian": (255, 255, 255),
+    "rider": (255, 255, 255),
+    "car": (255, 255, 255),
+    "truck": (255, 255, 255),
+    "bus": (255, 255, 255),
+    "train": (255, 255, 255),
+    "motorcycle": (255, 255, 255),
+    "bicycle": (255, 255, 255),
+    "traffic light": (255, 255, 255),
+    "traffic sign": (255, 255, 255),
+    "bg": (255, 255, 255)
+}
+
+kognic_det_name2RGB = {
+    "tram": (245, 245, 245),
+    "pickup vehicle": (197, 202, 233),
+    "bike": (155, 249, 196),
+    "truck": (178, 235, 242),
+    "van": (255, 205, 210),
+    "motorcycle": (255, 224, 178),
+    "kick bike": (255, 224, 178),
+    "car": (215, 204, 200),
+    "stroller": (225, 190, 231),
+    "heavy vehicle": (200, 230, 201),
+    "roadwork vehicle": (200, 230, 201),
+    "rickshaw": (248, 187, 208),
+    "pedestrian": (244, 67, 54),
+    "suv": (2, 136, 209),
+    "bus": (156, 39, 176),
+    "trailer": (67, 160, 71),
+    "vehicle": (255, 87, 34)
+}
+
+kognic_det_name2white = {
+    "tram": (255, 255, 255),
+    "pickup vehicle": (255, 255, 255),
+    "bike": (255, 255, 255),
+    "truck": (255, 255, 255),
+    "van": (255, 255, 255),
+    "motorcycle": (255, 255, 255),
+    "kick bike": (255, 255, 255),
+    "car": (255, 255, 255),
+    "stroller": (255, 255, 255),
+    "heavy vehicle": (255, 255, 255),
+    "roadwork vehicle": (255, 255, 255),
+    "rickshaw": (255, 255, 255),
+    "pedestrian": (255, 255, 255),
+    "suv": (255, 255, 255),
+    "bus": (255, 255, 255),
+    "trailer": (255, 255, 255),
+    "vehicle": (255, 255, 255)
+}
+
+bdd100k_det_name2white = {
+    "pedestrian": (255, 255, 255),
+    "rider": (255, 255, 255),
+    "car": (255, 255, 255),
+    "truck": (255, 255, 255),
+    "bus": (255, 255, 255),
+    "train": (255, 255, 255),
+    "motorcycle": (255, 255, 255),
+    "bicycle": (255, 255, 255),
+    "traffic light": (255, 255, 255),
+    "traffic sign": (255, 255, 255),
+    "bg": (255, 255, 255)
+}
+
+bdd100k_det_name2HEX = {
+    "pedestrian": 'F5F5F5',
+    "rider": "C5CAE9",
+    "car": "FFF9C4",
+    "truck": "B2EBF2",
+    "bus": "FFCDD2",
+    "train": "FFE0B2",
+    "motorcycle": "D7CCC8",
+    "bicycle": "E1BEE7",
+    "traffic light": "C8E6C9",
+    "traffic sign": "F8BBD0",
+    "bg": "F44336"
+}
+
+gtsrb_classes = {
+    0:'Speed limit 20km',
+    1:'Speed limit 30km', 
+    2:'Speed limit 50km', 
+    3:'Speed limit 60km', 
+    4:'Speed limit 70km', 
+    5:'Speed limit 80km', 
+    6:'End of speed limit 80km', 
+    7:'Speed limit 100km', 
+    8:'Speed limit 120km', 
+    9:'No passing', 
+    10:'No passing veh over 3.5 tons', 
+    11:'Right-of-way at intersection', 
+    12:'Priority road', 
+    13:'Yield', 
+    14:'Stop', 
+    15:'No vehicles', 
+    16:'Veh > 3.5 tons prohibited', 
+    17:'No entry', 
+    18:'General caution', 
+    19:'Dangerous curve left', 
+    20:'Dangerous curve right', 
+    21:'Double curve', 
+    22:'Bumpy road', 
+    23:'Slippery road', 
+    24:'Road narrows on the right', 
+    25:'Road work', 
+    26:'Traffic signals', 
+    27:'Pedestrians', 
+    28:'Children crossing', 
+    29:'Bicycles crossing', 
+    30:'Beware of ice snow',
+    31:'Wild animals crossing', 
+    32:'End speed + passing limits', 
+    33:'Turn right ahead',
+    34:'Turn left ahead', 
+    35:'Ahead only', 
+    36:'Go straight or right', 
+    37:'Go straight or left', 
+    38:'Keep right', 
+    39:'Keep left', 
+    40:'Roundabout mandatory', 
+    41:'End of no passing', 
+    42:'End no passing veh > 3.5 tons'
+}
+
+
+swedish_classes = {
+    0: '100_SIGN', 
+    1: '110_SIGN', 
+    2: '30_SIGN', 
+    3: '50_SIGN', 
+    4: '60_SIGN', 
+    5: '70_SIGN', 
+    6: '80_SIGN', 
+    7: '90_SIGN', 
+    8: 'GIVE_WAY', 
+    9: 'NO_PARKING', 
+    10: 'NO_STOPPING_NO_STANDING', 
+    11: 'OTHER', 
+    12: 'PASS_EITHER_SIDE', 
+    13: 'PASS_RIGHT_SIDE', 
+    14: 'PEDESTRIAN_CROSSING', 
+    15: 'PRIORITY_ROAD', 
+    16: 'STOP'
+}
+
+coco_det = {
+    0: 'person',
+    1: 'bicycle',
+    2: 'car',
+    3: 'motorcycle',
+    4: 'airplane',
+    5: 'bus',
+    6: 'train',
+    7: 'truck',
+    8: 'boat',
+    9: 'traffic light',
+    10: 'fire hydrant',
+    12: 'stop sign',
+    13: 'parking meter',
+    14: 'bench',
+    15: 'bird',
+    16: 'cat',
+    17: 'dog',
+    18: 'horse',
+    19: 'sheep',
+    20: 'cow',
+    21: 'elephant',
+    22: 'bear',
+    23: 'zebra',
+    24: 'giraffe',
+    26: 'backpack',
+    27: 'umbrella',
+    30: 'handbag',
+    31: 'tie',
+    32: 'suitcase',
+    33: 'frisbee',
+    34: 'skis',
+    35: 'snowboard',
+    36: 'sports ball',
+    37: 'kite',
+    38: 'baseball bat',
+    39: 'baseball glove',
+    40: 'skateboard',
+    41: 'surfboard',
+    42: 'tennis racket',
+    43: 'bottle',
+    45: 'wine glass',
+    46: 'cup',
+    47: 'fork',
+    48: 'knife',
+    49: 'spoon',
+    50: 'bowl',
+    51: 'banana',
+    52: 'apple',
+    53: 'sandwich',
+    54: 'orange',
+    55: 'broccoli',
+    56: 'carrot',
+    57: 'hot dog',
+    58: 'pizza',
+    59: 'donut',
+    60: 'cake',
+    61: 'chair',
+    62: 'couch',
+    63: 'potted plant',
+    64: 'bed',
+    66: 'dining table',
+    69: 'toilet',
+    71: 'tv',
+    72: 'laptop',
+    73: 'mouse',
+    74: 'remote',
+    75: 'keyboard',
+    76: 'cell phone',
+    77: 'microwave',
+    78: 'oven',
+    79: 'toaster',
+    80: 'sink',
+    81: 'refrigerator',
+    83: 'book',
+    84: 'clock',
+    85: 'vase',
+    86: 'scissors',
+    87: 'teddy bear',
+    88: 'hair drier',
+    89: 'toothbrush'
+}
