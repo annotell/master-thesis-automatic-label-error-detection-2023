@@ -1,4 +1,3 @@
-# master-thesis-automatic-label-error-detection-2023
 # An Anchor-based Approach to Zero-shot Noisy Label Detection
 Master Thesis of Yuching Li, 2023
 
