@@ -5,7 +5,7 @@ Master Thesis of Yuching Li, 2023
 
 # Table of Contents
 - [Thesis](#thesis)
-- [Code]
+- Code
     - [Supervised Model (Faster RCNN)](#fasterrcnn)
     - [Self-Supervised Model (GroundingDINO)](#groundingdino)
     - [Data Processing](#dataprocessing)
