@@ -286,8 +286,8 @@ def main(m_name):
     # # json_path = f'/mnt/bfd/yuc/kognic_test/3302_all_json/{json_name}.json'
 
     # # yc
-    # image_dir = '/media/18T/data_thesis/kognic/3302_all'
-    # json_path = f'/media/18T/data_thesis/kognic/3302_json/{json_name}.json'
+    # image_dir = f'{data_dirpath}/kognic/3302_all'
+    # json_path = ff'{data_dirpath}/kognic/3302_json/{json_name}.json'
    
     BOX_TRESHOLD = 0.2
     TEXT_TRESHOLD = 0.15
@@ -298,8 +298,8 @@ def main(m_name):
     json_dirname = 'val'
     # m_name = 'ass1'
     json_name = f'det_2d_stereo_{m_name}'
-    image_dir = '/media/18T/data_thesis/SHIFT/val/RGB_stereo'
-    json_path = f'/media/18T/data_thesis/SHIFT/{json_dirname}/{json_name}.json'
+    image_dir = f'{data_dirpath}/SHIFT/val/RGB_stereo'
+    json_path = ff'{data_dirpath}/SHIFT/{json_dirname}/{json_name}.json'
 
     if weight_name_acronym == 'cog':
         target_csv_dirpath = f'{target_csv_dirpath}/yu/data_pred/SHIFT_gdino_cog'

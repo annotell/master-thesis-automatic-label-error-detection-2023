@@ -4,7 +4,7 @@ from torchvision import transforms
 from torch.utils.data import DataLoader
 
 
-data_path = '/media/18T/data_thesis/kognic/3302'
+data_path = f'{data_dirpath}/kognic/3302'
 
 transform_img = transforms.Compose([
     transforms.Resize(size=700),

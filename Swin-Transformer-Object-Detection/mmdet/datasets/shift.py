@@ -154,7 +154,7 @@ if __name__ == "__main__":
     """Example for loading the SHIFT dataset for instance segmentation."""
 
     dataset = SHIFTDataset(
-        data_root="/media/18T/data_thesis/SHIFT/",
+        data_root=f"{data_dirpath}/SHIFT/",
         ann_file="train/det_2d_stereo.json",
         img_prefix="train/RGB_stereo.zip",
         backend_type="zip",

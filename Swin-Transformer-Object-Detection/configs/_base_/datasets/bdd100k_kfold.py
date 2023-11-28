@@ -99,14 +99,14 @@ data = dict(
     offical_val=dict(
         type=dataset_type,
         ann_file=f"{data_dirpath}/bdd100k/bdd100k_images_100k/labels_coco2/val_cocofmt.json",
-        img_prefix="/media/18T/data_thesis/bdd100k/bdd100k_images_100k/images/100k/val",
+        img_prefix=f"{data_dirpath}/bdd100k/bdd100k_images_100k/images/100k/val",
         # pipeline=test_pipeline,
         pipeline=anno_pipeline,
     ),
     small=dict(
         type=dataset_type,
-        ann_file=f"/media/18T/data_thesis/bdd100k/bdd100k_images_100k/0/val_small_val.json",
-        img_prefix="/media/18T/data_thesis/bdd100k/bdd100k_images_100k/0/val_small/images",
+        ann_file=ff"{data_dirpath}/bdd100k/bdd100k_images_100k/0/val_small_val.json",
+        img_prefix=f"{data_dirpath}/bdd100k/bdd100k_images_100k/0/val_small/images",
         # pipeline=test_pipeline,
         pipeline=anno_pipeline,
     ),

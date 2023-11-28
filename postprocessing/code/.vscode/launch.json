@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "train.py",
+            "type": "python",
+            "python": "/home/belay/miniconda3/envs/py38/bin/python",
+            "request": "launch",
+            "program": "./postprocessing/code/train.py",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "eval_prob.py",
+            "type": "python",
+            "python": "/home/belay/miniconda3/envs/py38/bin/python",
+            "request": "launch",
+            "program": "./postprocessing/code/eval_prob.py",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}

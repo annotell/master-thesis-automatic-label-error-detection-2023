@@ -7,8 +7,8 @@ p = pprint.PrettyPrinter(indent=4)
 
 def main():
 
-    coco_anno_filepath = '/media/18T/data_thesis/coco2017/annotations/instances_train2017.json'
-    # coco_anno_filepath = '/media/18T/data_thesis/coco2017/annotations/instances_val2017.json'
+    coco_anno_filepath = f'{data_dirpath}/coco2017/annotations/instances_train2017.json'
+    # coco_anno_filepath = f'{data_dirpath}/coco2017/annotations/instances_val2017.json'
 
     with open(coco_anno_filepath, 'r') as f:
         data = json.load(f)

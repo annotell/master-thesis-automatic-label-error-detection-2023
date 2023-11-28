@@ -198,16 +198,16 @@ def main():
     # # json_path = f'/mnt/bfd/yuc/kognic_test/3302_all_json/{json_name}.json'
 
     # # yc
-    # image_dir = '/media/18T/data_thesis/kognic/3302_all'
-    # json_path = f'/media/18T/data_thesis/kognic/3302_json/{json_name}.json'
+    # image_dir = f'{data_dirpath}/kognic/3302_all'
+    # json_path = ff'{data_dirpath}/kognic/3302_json/{json_name}.json'
    
     ############################################
     #                 NuImage                  #
     ############################################
     # json_dirname = 'nuimages-v1.0_coco'
     # json_name = 'nuimages_v1.0-val'
-    # image_dir = '/media/18T/data_thesis/NuImages/nuimages-v1.0-all'
-    # json_path = f'/media/18T/data_thesis/NuImages/{json_dirname}/{json_name}.json'
+    # image_dir = f'{data_dirpath}/NuImages/nuimages-v1.0-all'
+    # json_path = ff'{data_dirpath}/NuImages/{json_dirname}/{json_name}.json'
 
     ############################################
     #                 BDD100K                  #
