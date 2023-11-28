@@ -687,7 +687,7 @@ def process_shift_gdino(dataset, m_name, subset):
         target_csv_dirpath = f'./postprocessing/code/DataFrame/{main_dirname}/{m_name}'
 
         # single file
-        # fig_dirpath = '/home/belay/Documents/0_UPPSALA/KOGNIC_research/Codes/trafficsign/fig/SHIFT_gdino'
+        # fig_dirpath = './postprocessing/fig/SHIFT_gdino'
         # main_dirname = 'SHIFT_gdino_swint'
         # source_csv_dirpath = f'./postprocessing/code/data_pred/{main_dirname}/'
         # source_csv_filename = f'val_{m_name}_box0.2_{subset}.csv'
@@ -698,7 +698,7 @@ def process_shift_gdino(dataset, m_name, subset):
     # rounds = [1]
     for round_i in rounds:
         # multiple files
-        fig_dirpath = f'/home/belay/Documents/0_UPPSALA/KOGNIC_research/Codes/trafficsign/fig/{main_dirname}/{m_name}'
+        fig_dirpath = f'./postprocessing/fig/{main_dirname}/{m_name}'
         source_csv_filename = f'{m_name}_round{round_i}.csv'
         source_csv_filepath = f'{source_csv_dirpath}/{source_csv_filename}'
         target_csv_filepath = f'{target_csv_dirpath}/{source_csv_filename}'
@@ -833,7 +833,7 @@ def process_coco_gdino(dataset, m_name, subset):
         # id2new = gen_coco_mapper(id2class, coco_subset)
 
         main_dirname = 'COCO_gdino_swinb'
-        # fig_dirpath = f'/home/belay/Documents/0_UPPSALA/KOGNIC_research/Codes/trafficsign/fig/{main_dirname}'
+        # fig_dirpath = f'./postprocessing/fig/{main_dirname}'
         # annotations_instances_val2017_box0.2_all.csv
         # m_name = 'instances_val2017'
 
@@ -852,7 +852,7 @@ def process_coco_gdino(dataset, m_name, subset):
 
     for round_i in range(1, 6):
         # multiple files
-        fig_dirpath = f'/home/belay/Documents/0_UPPSALA/KOGNIC_research/Codes/trafficsign/fig/{main_dirname}/{m_name}/big'
+        fig_dirpath = f'./postprocessing/fig/{main_dirname}/{m_name}/big'
         source_csv_filename = f'{subset}_{m_name}_round{round_i}.csv'
         source_csv_filepath = f'{source_csv_dirpath}/{source_csv_filename}'
         target_csv_filepath = f'{target_csv_dirpath}/{source_csv_filename}'
@@ -972,7 +972,7 @@ def process_shift_fasterrcnn(input_m_name, keep_bg):
     source_csv_dirpath = f'./postprocessing/code/data_pred/SHIFT_val/{m_name}'
     target_csv_dirpath = f'./postprocessing/code/DataFrame/SHIFT_val/{m_name}'
 
-    fig_dirpath = f'/home/belay/Documents/0_UPPSALA/KOGNIC_research/Codes/trafficsign/fig/SHIFT_rcnn/{input_m_name}'
+    fig_dirpath = f'./postprocessing/fig/SHIFT_rcnn/{input_m_name}'
 
     if not os.path.isdir(fig_dirpath):
         print(f'Create fig_dirpath: {fig_dirpath}')
@@ -1051,13 +1051,13 @@ def save_bdd100k_fasterrcnn(dataset):
         m_name = 'bdd100k_gdino_swint'
         # m_name = 'bdd100k_gdino_swinb'
 
-        fig_dirpath = '/home/belay/Documents/0_UPPSALA/KOGNIC_research/Codes/trafficsign/fig/BDD100k_Det3'
+        fig_dirpath = './postprocessing/fig/BDD100k_Det3'
         source_csv_dirpath = f'./postprocessing/code/data_pred/{m_name}/val_all'
 
     elif dataset == 'shift':
 
         from id_to_class import shift_det as id2class
-        fig_dirpath = '/home/belay/Documents/0_UPPSALA/KOGNIC_research/Codes/trafficsign/fig/SHIFT'
+        fig_dirpath = './postprocessing/fig/SHIFT'
         source_csv_dirpath = f'./postprocessing/code/DataFrame/SHIFT/clean'
 
     source_csv_path = f'{source_csv_dirpath}/epo8.csv'
@@ -1104,7 +1104,7 @@ def preprocess_bdd100k_fasterrcnn():
     epos = range(1, 13)
     # epos = [1]
     m_name = 'bdd100k_swin-t_val_split1'
-    fig_dirpath = '/home/belay/Documents/0_UPPSALA/KOGNIC_research/Codes/trafficsign/fig/BDD100k_Det3'
+    fig_dirpath = './postprocessing/fig/BDD100k_Det3'
     source_csv_dirpath = f'./postprocessing/code/data_pred/{m_name}'
     target_csv_dirpath = f'./postprocessing/code/data_pred/tmp_{m_name}'
 
@@ -1148,7 +1148,7 @@ def process_bdd100k_fasterrcnn_combine_splits(keep_bg):
     # m_names = ['swin-t_val_split0', 'swin-t_val_split1']
     m_names = ['val_split0', 'val_split1']
 
-    fig_dirpath = '/home/belay/Documents/0_UPPSALA/KOGNIC_research/Codes/trafficsign/fig/BDD100K_rcnn/multiplot'
+    fig_dirpath = './postprocessing/fig/BDD100K_rcnn/multiplot'
 
     if not os.path.isdir(fig_dirpath):
         print(f'Create fig_dirpath: {fig_dirpath}')
@@ -1249,7 +1249,7 @@ def process_bdd100k_gdino_combine_splits(keep_bg):
     m_names = ['Split-0', 'Split-1']
     dirname = 'bdd100k_gdino_swint'
 
-    fig_dirpath = f'/home/belay/Documents/0_UPPSALA/KOGNIC_research/Codes/trafficsign/fig/{dirname}/multiplot'
+    fig_dirpath = f'./postprocessing/fig/{dirname}/multiplot'
 
     target_csv_dirpath = f'./postprocessing/code/DataFrame/{dirname}'
     target_csv_filepath = f'{target_csv_dirpath}/split01.csv'

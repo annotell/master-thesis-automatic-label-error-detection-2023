@@ -99,46 +99,6 @@ bdd100k_det_name2white = {
     "bg": (255, 255, 255)
 }
 
-kognic_det_name2RGB = {
-    "tram": (245, 245, 245),
-    "pickup vehicle": (197, 202, 233),
-    "bike": (155, 249, 196),
-    "truck": (178, 235, 242),
-    "van": (255, 205, 210),
-    "motorcycle": (255, 224, 178),
-    "kick bike": (255, 224, 178),
-    "car": (215, 204, 200),
-    "stroller": (225, 190, 231),
-    "heavy vehicle": (200, 230, 201),
-    "roadwork vehicle": (200, 230, 201),
-    "rickshaw": (248, 187, 208),
-    "pedestrian": (244, 67, 54),
-    "suv": (2, 136, 209),
-    "bus": (156, 39, 176),
-    "trailer": (67, 160, 71),
-    "vehicle": (255, 87, 34)
-}
-
-kognic_det_name2white = {
-    "tram": (255, 255, 255),
-    "pickup vehicle": (255, 255, 255),
-    "bike": (255, 255, 255),
-    "truck": (255, 255, 255),
-    "van": (255, 255, 255),
-    "motorcycle": (255, 255, 255),
-    "kick bike": (255, 255, 255),
-    "car": (255, 255, 255),
-    "stroller": (255, 255, 255),
-    "heavy vehicle": (255, 255, 255),
-    "roadwork vehicle": (255, 255, 255),
-    "rickshaw": (255, 255, 255),
-    "pedestrian": (255, 255, 255),
-    "suv": (255, 255, 255),
-    "bus": (255, 255, 255),
-    "trailer": (255, 255, 255),
-    "vehicle": (255, 255, 255)
-}
-
 bdd100k_det_name2white = {
     "pedestrian": (255, 255, 255),
     "rider": (255, 255, 255),

@@ -276,19 +276,6 @@ def main(m_name):
     
     model = load_model(conf_path, weight_path)
 
-    ############################################
-    #                 KOGNIC                   #
-    ############################################
-    # json_name = '3302_annotate'
-
-    # # lambda
-    # # image_dir = '/mnt/bfd/yuc/kognic_test/3302_all'
-    # # json_path = f'/mnt/bfd/yuc/kognic_test/3302_all_json/{json_name}.json'
-
-    # # yc
-    # image_dir = f'{data_dirpath}/kognic/3302_all'
-    # json_path = ff'{data_dirpath}/kognic/3302_json/{json_name}.json'
-   
     BOX_TRESHOLD = 0.2
     TEXT_TRESHOLD = 0.15
 

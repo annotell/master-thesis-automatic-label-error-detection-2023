@@ -22,20 +22,6 @@ pp = pprint.PrettyPrinter(indent=4)
 
 
 def xywh2ratio(img_w, img_h, bbox):
-    # bbox_left, bbox_top, bbox_width, bbox_height = bbox
-
-    # cx = (bbox_left + bbox_width/2.0)
-    # cy = (bbox_top + bbox_height/2.0)
-
-    # cx = 0 if cx < 0 else cx
-    # cx = img_w if cx > 0 else cx
-    # cy = 0 if cy < 0 else cy
-    # cy = img_h if cy > 0 else cy
-
-    # x_center_ratio = cx/img_w
-    # y_center_ratio = cx/img_h
-    # w_ratio = bbox_width/img_w
-    # h_ratio = bbox_height/img_h
 
     x, y, w, h = bbox
     x_center = x + w/2.0
@@ -188,18 +174,7 @@ def main():
     saved_objs = []
     model = load_model(conf_path, weight_path)
 
-    ############################################
-    #                 KOGNIC                   #
-    ############################################
-    # json_name = '3302_annotate'
 
-    # # lambda
-    # # image_dir = '/mnt/bfd/yuc/kognic_test/3302_all'
-    # # json_path = f'/mnt/bfd/yuc/kognic_test/3302_all_json/{json_name}.json'
-
-    # # yc
-    # image_dir = f'{data_dirpath}/kognic/3302_all'
-    # json_path = ff'{data_dirpath}/kognic/3302_json/{json_name}.json'
    
     ############################################
     #                 NuImage                  #
@@ -242,49 +217,6 @@ def main():
     # BDD100k
     # pkl_path = f'{pkl_dir}/{json_dirname}_{json_name}_box{BOX_TRESHOLD:.1f}_{subset_name}_properties.pkl'
 
-    # KOGNIC
-    # kognic_id2class = {int(k): v for k, v in data_dict['id2class'].items()}
-    # pp.pprint(kognic_id2class)
-
-    # kognic_carvan = {
-    #     0: "car",
-    #     1: "van"
-    # }
-
-    # kognic_trambus = {
-    #     0: "tram",
-    #     1: "bus"
-    # }
-
-    # kognic_vansuvtruck = {
-    #     0: "van",
-    #     1: "suv",
-    #     2: "truck"
-    # }
-
-    # kognic_carbikemoto = {
-    #     0: "car",
-    #     1: "bicycle",
-    #     2: "motorcycle"
-    # }
-
-    # kognic_vehicle = {
-    #     0: "car",
-    #     1: "truck",
-    #     2: "bus",
-    #     3: "tram",
-    #     # 4: "suv",
-    #     # 5: "trailer",
-    #     # 6: "stroller",
-    #     # 7: "van"
-    # }
-
-    # kognic_person = {
-    #     0: "bike",
-    #     1: "motorcycle",
-    #     # 2: "pedestrian"
-    # }
-
 
     def create_idx_mapping(oriset, subset):
         new_classnames = list(subset.values())
@@ -294,18 +226,6 @@ def main():
                 new_idx = new_classnames.index(v)
                 ori2subset[k] = new_idx
         return ori2subset
-
-    ################# Change these three line #################
-    # kognic_map = create_idx_mapping(kognic_id2class, kognic_carbikemoto)
-    # subset_name = 'carbikemoto'
-    # bdd100k_det_subset = kognic_carbikemoto
-    ###########################################################
-
-    # bdd100k_det_map = kognic_map
-    # id2class = bdd100k_vehicle
-
-
-    # pkl_path = f'{pkl_dir}/{weight_name_acronym}_{json_name}_box{BOX_TRESHOLD:.1f}_{subset_name}.pkl'
 
 
 

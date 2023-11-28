@@ -25,7 +25,7 @@ def main():
     args = parser.parse_args()
 
     parent_dir = f'{data_dirpath}/bdd100k/bdd100k_images_100k'
-    code_dir = '/home/belay/Documents/0_UPPSALA/KOGNIC_research/Codes/Swin-Transformer-Object-Detection'
+    code_dir = './Swin-Transformer-Object-Detection'
     label_path = f'{parent_dir}/labels_cofrom mmdet.datasets.pipelines import Composeo2/val_cocofmt.json'
     img_dir = f'{parent_dir}/images/100k/val/'
 
@@ -37,7 +37,7 @@ def main():
 
     # Official
     # 1: pedestrian    parent_dir = f'{data_dirpath}/bdd100k/bdd100k_images_100k'
-    code_dir = '/home/belay/Documents/0_UPPSALA/KOGNIC_research/Codes/Swin-Transformer-Object-Detection'
+    code_dir = './Swin-Transformer-Object-Detection'
     label_path = f'{parent_dir}/labels_cofrom mmdet.datasets.pipelines import Composeo2/val_cocofmt.json'
     img_dir = f'{parent_dir}/images/100k/val/'
     # 2: rider

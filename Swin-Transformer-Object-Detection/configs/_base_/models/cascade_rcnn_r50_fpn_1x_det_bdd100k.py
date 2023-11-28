@@ -7,5 +7,5 @@ _base_ = [
     "../default_runtime.py",
 ]
 # load_from = "https://dl.cv.ethz.ch/bdd100k/det/models/cascade_rcnn_r50_fpn_1x_det_bdd100k.pth"
-# load_from = '/home/belay/Documents/0_UPPSALA/KOGNIC_research/Codes/Swin-Transformer-Object-Detection/pths/cascade_rcnn_r50_fpn_1x_det_bdd100k.pth'
+# load_from = './Swin-Transformer-Object-Detection/pths/cascade_rcnn_r50_fpn_1x_det_bdd100k.pth'
 load_from = ''

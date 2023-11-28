@@ -48,6 +48,4 @@ optimizer = dict(
 lr_config = dict(warmup_iters=1000, step=[27, 33])
 
 data = dict(samples_per_gpu=2, workers_per_gpu=2)
-# load_from = "https://dl.cv.ethz.ch/bdd100k/det/models/cascade_rcnn_swin-t_fpn_3x_det_bdd100k.pth"
-# load_from = "/home/belay/Documents/0_UPPSALA/KOGNIC_research/Codes/bdd100k-models/models/cascade_rcnn_swin-t_fpn_3x_det_bdd100k.pth"
 load_from = ""
