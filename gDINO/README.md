@@ -2,6 +2,10 @@
 
 ---
 
+This is the hacked Grounding DINO, coded modified for bbox injection.
+
+---
+
 
 Grounding DINO Methods |  [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/IDEA-Research/GroundingDINO)
 [![arXiv](https://img.shields.io/badge/arXiv-2303.05499-b31b1b.svg)](https://arxiv.org/abs/2303.05499) 

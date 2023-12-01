@@ -28,3 +28,4 @@ Directory: [Inject-GroundingDINO](https://github.com/annotell/master-thesis-auto
 
 ## Data Processing <a name="dataprocessing"></a>
 Directory: 
+[Post-processing](https://github.com/annotell/master-thesis-automatic-label-error-detection-2023/tree/master/postprocessing/code)
